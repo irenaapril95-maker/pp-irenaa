@@ -1,0 +1,138 @@
+:root{
+  --pink-1: #ffe6f2;
+  --pink-2: #ffb3d9;
+  --pink-3: #ff77b3;
+  --accent: #5c2a5e;
+  --muted: #6b6b6b;
+  --card-shadow: 0 6px 18px rgba(92,42,94,0.08);
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+body{
+  margin:0;
+  background:linear-gradient(180deg,var(--pink-1),white);
+}
+
+.container{
+  max-width:1000px;
+  margin:28px auto;
+  padding:20px;
+}
+
+header{
+  background:linear-gradient(90deg,var(--pink-2),var(--pink-3));
+  padding:18px;
+  border-radius:16px;
+  box-shadow:var(--card-shadow);
+  color:white;
+}
+
+.branding{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+
+.avatar{
+  width:96px; height:96px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid rgba(255,255,255,0.25);
+}
+
+nav a{
+  margin-right:12px;
+  color:white;
+  font-weight:600;
+  text-decoration:none;
+}
+
+.card{
+  background:white;
+  box-shadow:var(--card-shadow);
+  padding:18px;
+  border-radius:12px;
+  margin-top:18px;
+}
+
+h2{
+  color:var(--accent);
+}
+
+.muted{
+  color:var(--muted);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 320px;
+  gap:20px;
+}
+
+.tag{
+  display:inline-block;
+  background:var(--pink-1);
+  padding:6px 10px;
+  border-radius:16px;
+  margin-right:6px;
+  margin-top:6px;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+table th, table td{
+  padding:8px;
+  border:1px solid #f2d9e8;
+}
+
+caption{
+  margin-bottom:8px;
+  font-weight:bold;
+}
+
+.project-thumb{
+  max-width:100%;
+  border-radius:8px;
+}
+
+.nice-iframe{
+  width:100%;
+  height:200px;
+  border-radius:8px;
+  border:0;
+}
+
+input, textarea{
+  width:100%;
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #eee;
+  box-sizing:border-box;
+  margin-bottom:10px;
+}
+
+button{
+  background:var(--pink-3);
+  padding:10px 14px;
+  border-radius:10px;
+  border:0;
+  color:white;
+  cursor:pointer;
+}
+
+.skip{
+  position:absolute;
+  left:-999px;
+}
+
+@media (max-width:880px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+  .avatar{
+    width:70px; height:70px;
+  }
+}

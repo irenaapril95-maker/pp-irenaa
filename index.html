@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <!-- SEO Elements -->
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="Portofolio pribadi Irena Aprillyyana — profil, keterampilan, pengalaman, dan contoh karya.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Portofolio: Irena Aprillyyana">
+  <meta property="og:image" content="propil">
+  <meta property="og:description" content="Portofolio personal yang manis berwarna pink, dibuat dengan HTML murni.">
+
+  <title>Portofolio — Irena Aprillyyana</title>
+
+  <!-- Hubungkan ke file CSS -->
+  <link rel="stylesheet" href="ppt-style.css">
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip">Skip to content</a>
+
+  <div class="container">
+
+    <!-- HEADER -->
+    <header role="banner" aria-labelledby="judul-utama">
+      <div class="branding">
+        <img src="propil.jpg" alt="Foto Irena Aprillyyana sedang tersenyum" class="avatar">
+        <div>
+          <h1 id="judul-utama">Irena Aprillyyana — Web Developer Pemula </h1>
+          <p class="muted">Saya membangun halaman yang ramah akses dan lucu — suka warna pink dan UI yang lembut.</p>
+          <p class="muted">Terakhir diperbarui: <time datetime="2025-11-22">22 November 2025</time></p>
+        </div>
+      </div>
+
+      <!-- NAV -->
+      <nav aria-label="Navigasi utama portofolio">
+        <a href="#about">Tentang</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#education">Riwayat</a>
+        <a href="#projects">Projek</a>
+        <a href="#contact">Kontak</a>
+        <a href="pptlastcss.html">Kumpulan tugas</a>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main id="main-content" class="card" role="main">
+
+      <div class="grid">
+
+        <!-- BAGIAN KIRI -->
+        <div>
+
+          <!-- ABOUT -->
+          <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">Tentang Saya</h2>
+            <article>
+              <p>
+                Halo! Saya <strong>Irena</strong>, seorang <abbr title="HyperText Markup Language">HTML</abbr>
+                enthusiast
+                yang suka membuat UI lucu bertema pink.
+              </p>
+              <div tabindex="0" aria-describedby="about-desc">
+                <p id="about-desc" class="muted">
+                  Saya fokus pada HTML semantik, aksesibilitas, dan dasar CSS.
+                </p>
+              </div>
+            </article>
+          </section>
+
+          <!-- SKILLS -->
+          <section id="skills" class="card">
+            <h2>Keahlian</h2>
+            <p class="muted">Beberapa kemampuan yang saya kuasai:</p>
+
+            <ul class="skills-list">
+              <li class="tag">HTML Semantik</li>
+              <li class="tag">Aksesibilitas (a11y)</li>
+              <li class="tag">CSS dasar</li>
+              <li class="tag">Responsive Design</li>
+            </ul>
+
+            <dl>
+              <dt>HTML</dt>
+              <dd>Struktur semantik & aksesibilitas.</dd>
+
+              <dt>ARIA</dt>
+              <dd>Penggunaan aria-label, aria-describedby, role.</dd>
+
+              <dt>Testing</dt>
+              <dd>Pengujian keyboard & screen reader dasar.</dd>
+            </dl>
+          </section>
+
+          <!-- EDUCATION TABLE -->
+          <section id="education" class="card">
+            <h2>Riwayat Pendidikan & Pengalaman</h2>
+
+            <table aria-describedby="edu-desc">
+              <caption>Ringkasan pendidikan dan pengalaman</caption>
+              <thead>
+                <tr>
+                  <th>Periode</th>
+                  <th>Institusi</th>
+                  <th>Posisi / Jurusan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2021 - 2025</td>
+                  <td>SMKN Puspahiang</td>
+                  <td>Teknik Komputer Jaringan</td>
+                </tr>
+                <tr>
+                  <td>2025 - Sekarang</td>
+                  <td>Universitas Mayasari Bakti</td>
+                  <td>Teknik Informatika</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="3">Aktif mengerjakan project HTML & CSS sejak 2022.</td>
+                </tr>
+              </tfoot>
+            </table>
+
+            <p id="edu-desc" class="muted">Tabel pendidikan & pengalaman saya.</p>
+          </section>
+
+        <!-- ASIDE KANAN -->
+        <aside class="card">
+          <h2>Ringkasan Cepat</h2>
+          <div tabindex="0" aria-describedby="aside-desc">
+            <p id="aside-desc">Saya fokus pada HTML semantik & UI bertema pink.</p>
+          </div>
+
+          <h3>Tag</h3>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">A11y</span>
+          <span class="tag">Responsive</span>
+
+          <h3>Kontak</h3>
+          <p>Email: <a href="mailto:irenaapril.95@gmail.com"></a>irenaapril.95@gmail.com</p>
+          <p>Telepon: <a href="tel:+62 858-7127-5284">+62 858-7127-5284</a></p>
+        </aside>
+
+      </div>
+
+      <!-- CONTACT FORM -->
+      <section id="contact" class="card">
+        <h2>Form Kontak</h2>
+
+        <form novalidate>
+          <fieldset>
+            <legend>Informasi Kontak</legend>
+
+            <label for="nama">Nama *</label>
+            <input id="nama" required minlength="2" maxlength="80">
+
+            <label for="email">Email *</label>
+            <input id="email" required type="email">
+
+            <label for="telepon">Nomor Telepon</label>
+            <input id="telepon" type="tel" minlength="7" maxlength="15">
+
+            <label for="pesan">Pesan *</label>
+            <textarea id="pesan" required minlength="10" maxlength="800"></textarea>
+
+            <fieldset>
+              <legend>Jenis Kontak</legend>
+              <label><input type="radio" name="jenis" required> Saran</label>
+              <label><input type="radio" name="jenis" required> Pertanyaan</label>
+            </fieldset>
+
+            <label class="check">
+              <input type="checkbox" required> Saya setuju dihubungi
+            </label>
+
+            <button type="submit">Kirim Pesan</button>
+          </fieldset>
+        </form>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="card">
+      <p>© <time datetime="2025">2025</time> Irena Aprillyyana</p>
+      <p class="muted">Halaman ini memenuhi semua elemen FreeCodeCamp.</p>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
